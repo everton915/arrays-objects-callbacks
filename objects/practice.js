@@ -14,12 +14,12 @@
   Then alert your name using dot notation.
 */
 
-var me = new Object();{
-  me.name = 'Ty';
-  me.age = 28;{
-    alert(me.name);
-  }
-}
+//  var me = new Object();{
+//   me.name = 'Ty';
+//   me.age = 28;{
+//    alert(me.name);
+//   }
+// }
 
  
 
@@ -30,7 +30,7 @@ var me = new Object();{
   Have the values to those keys be strings that are equal to your favorite thing in that category.
 */
 
-var favoriteThings = new Object ();{
+var favoriteThings = new Object();{
   favoriteThings.band = 'Tool',
   favoriteThings.food = 'Thai',
   favoriteThings.person = 'Zach',
@@ -65,13 +65,18 @@ favoriteThings.book = 'Harry Potter';
   Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack.
 */
 
-//Code here
+var backPack = new Object();{
+  var item = 'firstPocket';
+  var item = 'color';
+  backPack.firstPocket = 'chapstick';
+  backPack.color = 'black';
+}
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
-//Code here
+alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -79,7 +84,7 @@ Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console.
 */
 
-//Code here
+console.log(backPack)
 
 ////////// PROBLEM 4 //////////
 
@@ -100,7 +105,8 @@ var user2 = {
   Make that change without modifying the original object code above.
 */
 
-//Code Here
+user2.name = 'Bryan G. Smith';
+user2.email = 'bryan.smith@devmounta.in';
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
@@ -111,14 +117,15 @@ var user2 = {
   Create an empty object called methodCollection.
 */
 
-//Code Here
+var methodCollection = new Object(); { }
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
 */
 
-//Code Here
+
+
 
 /*
   Now call your alertHello and logHello methods.
@@ -133,7 +140,13 @@ var user2 = {
   Return a new object with all of the information that you passed in.
 */
 
-//Code Here
+function makePerson (){
+  makePerson.name = ' ',
+  makePerson.birthday = ' ',
+  makePerson.ssn = ' ';{
+    return('name', 'birthday', 'ssn');
+  }
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -143,4 +156,9 @@ var user2 = {
 */
 
 function makeCard(){
+  makeCard.cardNumber = ' ',
+  makeCard.expirationDate = '',
+  makeCard.securityCode = ' ';
+    return(makeCard)
+
 }
