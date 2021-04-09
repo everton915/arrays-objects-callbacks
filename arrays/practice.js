@@ -70,8 +70,9 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 function reversedLooper(letters){
-
-
+  for (let i = letters.length - 1; i >=0; i--){
+    alert(letters[i]);
+  }
 }
 
 
@@ -125,8 +126,17 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 function divider(numbersArray){
-
+  let evens = [];
+  for(let i = 0; i< nums.length; i++){
+    if (nums[i] % 2 === 0){
+      evens.push(nums[i]);
+    }
+  }
+  return evens;
 }
+ 
+console.log(divider(nums))
+
 
 
 
@@ -231,7 +241,9 @@ for(var i = 0; i < num2; i++){
   Return the longer of the two arrays.
 */
 
-//Code Here
+function longer(arr1,arr2){
+
+}
 
 
 

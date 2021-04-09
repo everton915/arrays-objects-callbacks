@@ -14,7 +14,14 @@
   Then alert your name using dot notation.
 */
 
-//Code here
+var me = new Object();{
+  me.name = 'Ty';
+  me.age = 28;{
+    alert(me.name);
+  }
+}
+
+ 
 
 ////////// PROBLEM 2 //////////
 
@@ -23,21 +30,30 @@
   Have the values to those keys be strings that are equal to your favorite thing in that category.
 */
 
-//Code here
+var favoriteThings = new Object ();{
+  favoriteThings.band = 'Tool',
+  favoriteThings.food = 'Thai',
+  favoriteThings.person = 'Zach',
+  favoriteThings.book = 'The Alchemist',
+  favoriteThings.movie = 'Great question!',
+  favoriteThings.holiday = 'Christmas';
+}
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car
   and then another key named 'brand' with the value being your favorite brand.
 */
 
-//Code here
-
+favoriteThings.car = 'Ford F-150',
+favoriteThings.brand = 'Troy Lee Designs';
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
-//Code here
+favoriteThings.food = 'Chicken Nuggets',
+favoriteThings.book = 'Harry Potter';
+
 
 ////////// PROBLEM 3 //////////
 
@@ -126,4 +142,5 @@ var user2 = {
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
-//Code Here
+function makeCard(){
+}
