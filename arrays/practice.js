@@ -130,6 +130,10 @@ function divider(numbersArray){
   for(let i = 0; i< nums.length; i++){
     if (nums[i] % 2 === 0){
       evens.push(nums[i]);
+    } else {
+    if (nums[i] % 1 === 0) {
+      
+    }
     }
   }
   return evens;

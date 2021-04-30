@@ -14,12 +14,13 @@
   Then alert your name using dot notation.
 */
 
-//  var me = new Object();{
-//   me.name = 'Ty';
-//   me.age = 28;{
-//    alert(me.name);
-//   }
-// }
+var me = {
+  name: "Ty",
+  age: 28
+};
+
+console.log(me.age)
+
 
  
 
